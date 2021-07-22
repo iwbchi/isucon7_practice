@@ -4,9 +4,9 @@ sudo rm -rf /var/log/mysql/mysql-slow.log
 
 git pull 
 
-sudo cp /home/isucon/isucon7_practice/mysqld.cnf /etc/mysql/mysql.conf.d/mysqld.cnf
-sudo cp /home/isucon/isucon7_practice/app.py /home/isubata/webapp/python/app.py
-sudo cp /home/isucon/isucon7_practice/nginx.conf /etc/nginx/sites-available/nginx.conf
+sudo cp -f /home/isucon/isucon7_practice/mysqld.cnf /etc/mysql/mysql.conf.d/mysqld.cnf
+sudo cp -f /home/isucon/isucon7_practice/app.py /home/isubata/webapp/python/app.py
+sudo cp -f /home/isucon/isucon7_practice/nginx.conf /etc/nginx/sites-available/nginx.conf
 
 sudo systemctl restart nginx.service
 sudo systemctl restart mysql.service
